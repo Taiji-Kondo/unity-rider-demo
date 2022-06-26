@@ -9,12 +9,14 @@ public class Variant : MonoBehaviour
         string stringVariant = "string variant";
         int intVariant = 10;
         float floatVariant = 5.3f;
-        bool boolVariant = intVariant == floatVariant;
+        bool falseVariant = intVariant == floatVariant;
+        bool trueVariant = intVariant != floatVariant;
         
         Debug.Log(stringVariant);
         Debug.Log(intVariant);
         Debug.Log(floatVariant);
-        Debug.Log(boolVariant);
+        Debug.Log(falseVariant);
+        Debug.Log(trueVariant);
     }
 
     void Update()
