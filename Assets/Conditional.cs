@@ -11,23 +11,20 @@ public class Conditional : MonoBehaviour
 
         int fizzInt = 3;
         int buzzInt = 5;
-        
-        bool isFizz = fizzInt % 3 == 0;
-        bool isBuzz = buzzInt % 5 == 0;
 
         for (int j = 1; j < 100; j++)
         {
-            if (isFizz && isBuzz)
+            if (j % fizzInt == 0 && j % buzzInt == 0)
             {
                 Debug.Log(j);
                 Debug.Log(fizz + buzz);
             }
-            else if (isFizz)
+            else if (j % fizzInt == 0)
             {
                 Debug.Log(j);
                 Debug.Log(fizz);
             }
-            else if (isBuzz)
+            else if (j % buzzInt == 0)
             {
                 Debug.Log(j);
                 Debug.Log(buzz);
