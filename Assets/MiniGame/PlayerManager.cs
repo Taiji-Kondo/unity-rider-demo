@@ -6,11 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         float x = Input.GetAxisRaw("Horizontal");
